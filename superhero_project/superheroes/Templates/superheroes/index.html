@@ -14,6 +14,7 @@
         {% endfor %}
     </ul>
     <a href="{% url 'superheroes:create' %}">Add New Hero</a>
-    <div><img src="C:\Users\pfaff\OneDrive\Pictures/Batman.jpg" width="1200" height="675" alt="The Dark Knight."></div>
+    {% load static %} 
+    <div><img src="{% static 'C:\Users\pfaff\OneDrive\Pictures/Batman.jpg'%}" width="1200" height="675" alt="The Dark Knight."></div>
 </body>
 </html>
